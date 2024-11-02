@@ -1,0 +1,217 @@
+﻿.oval-container {
+    background-color: white;
+    border-radius: 60%;
+    padding: 89px;
+    position: relative;
+    text-align: center;
+    width: 1000px;
+    height: 351px;
+    margin-top: -84px;
+    margin-left: 63px;
+}
+
+.overlay-text {
+    padding: 23px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners for the overlay */
+    position: absolute; /* Allows positioning over the oval */
+    bottom: 18px; /* Position the text at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-51%); /* Adjust horizontal center */
+    width: 136%; /* Width of the overlay */
+
+}
+.position-relative {
+    position: relative; /* Make the container relative */
+}
+
+.arrow-top-right {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 138px;
+}
+
+.arrow-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: -74px;
+    width: 104px;
+    transform: scale(-1, 1);
+}
+
+
+.info-div-2nd {
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 139px;
+    padding: 59px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+.info-div-2nd ul {
+    padding-left: 20px; /* Indentation for list */
+    margin-top: -16px;
+}
+.container-1 {
+    margin-top: -2px;
+}
+.info-div-1st {
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 115px;
+    padding: 58px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.info-div-1st {
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 139px;
+    padding: 59px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.info-div-1st p {
+    font-size: 1.4rem; /* Set the font size of the paragraph to 1rem */
+    color: black; /* You can adjust the color if needed */
+}
+.star-icon {
+    width: 90px; /* Common width for both icons */
+    height: auto; /* Keep aspect ratio */
+}
+
+.star-icon-1 {
+    position: absolute;
+    top: -17px;
+    left: -24px;
+    filter: hue-rotate(300deg) brightness(0.7); /* Adjust to achieve dark pink */
+}
+
+.star-icon-2 {
+    position: absolute;
+    bottom: -15px;
+    left: -118px;
+    filter: brightness(27%) saturate(1500%) hue-rotate(195deg);
+}
+.content-wrapper {
+    display: flex; /* Use Flexbox to align items */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+}
+
+.visa-icon {
+    margin-left: 20px;
+    width: 122px;
+    height: auto;
+}
+.big-bold {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+.clipboard-icon {
+    position: absolute;
+    right: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: auto;
+    z-index: 10;
+}
+.info-div-2nd p {
+    font-weight: bold;
+}
+.info-div-2nd h2 {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+}
+.overlay-container {
+    position: relative; /* Enable absolute positioning for children */
+}
+
+.arrow-icon {
+    position: absolute;
+    right: -168px;
+    top: 36%;
+    transform: translateY(-50%);
+    z-index: 10;
+    height: auto;
+    width: 21%;
+    rotate: -56deg;
+}
+/*Footer*/
+.info-div-footer {
+    background-color: lightpink;
+    text-align: center; /* Center align all text within the footer */
+}
+.footer-content p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Make text bold */
+    margin: 0; /* Remove default margins */
+}
+
+.footer-content {
+    position: relative;
+    margin-top: 20px; /* Space above the container */
+    background-color: white;
+    border-radius: 139px;
+    padding: 44px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 923px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px display: inline-block; /* Keep the container size tight around its content */
+}
+.container-5 {
+    background-color: lightpink;
+    border: 2px solid blue;
+    padding: 10px;
+    position: relative;
+    margin-left: 16px;
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 221px;
+}
+.email {
+    position: absolute;
+    top: 61%;
+    left: 37%;
+    transform: translateY(0%);
+    margin-left: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.arrow-icon-2 {
+    position: absolute;
+    right: 1163px;
+    top: 1052px;
+    transform: translateY(-69%);
+    z-index: 10;
+    height: auto;
+    width: 20%;
+    rotate: 108deg;
+}
+.star-icon-3 {
+    position: absolute;
+    top: 1351px;
+    left: 1210px;
+    filter: brightness(27%) saturate(1500%) hue-rotate(195deg);
+    width: 90px;
+    rotate: 41deg;
+}
+.star-icon-4 {
+    position: absolute;
+    top: 7px;
+    left: 868px;
+    filter: hue-rotate(300deg) brightness(0.7);
+    width: 90px;
+}

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Visa_Process.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/main.css" rel="stylesheet" />
+    <link href="Content/about.css" rel="stylesheet" />
+    <link href="Content/contact.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.7.0.min.js"></script>
+    <script src="Scripts/custom_javascript.js"></script>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav class="navbar navbar-expand-sm" style="background-color: lightpink;">
+            <div class="container position-relative"> <!-- Add position-relative -->
+                <div class="oval-container">
+                    <span class="navbar-brand" style="font-size: 5rem; color: black;">GATEPASS GLOBAL</span>
+                    <p class="overlay-text" style="font-size: 1.9rem; color: black; text-align: center;">
+                        No need to travel miles—your virtual visa assistant is here to make it easy!
+                    </p>
+                </div>
+                <img src="Assets/plane-2.png" alt="plan-1" class="arrow-top-right" />
+                <img src="Assets/plane-2.png" alt="plan-2" class="arrow-bottom-left" />
+            </div>
+        </nav>
+
+
+
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+          <footer class="info-div-footer">
+            <img src="Assets/star.png" class="star-icon-3" alt="Star Icon" />
+              <br />
+            <div class="footer-content">
+                <img src="Assets/star.png" class="star-icon-4" alt="Star Icon" />
+                <p>
+                    <span class="big-bold">GET IN TOUCH</span><br />
+                    We are here to assist you with your visa queries. Reach out to us anytime!
+                </p>
+                <div class="container-5">
+                    <h3>Email Us</h3>
+                </div>
+                <p class="email">Gatepassglobalvs@gmail.com</p>
+            </div>
+              <img src="Assets/arrow-1.png" class="arrow-icon-2" alt="Arrow Icon">
+              <br />
+        </footer>
+
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
